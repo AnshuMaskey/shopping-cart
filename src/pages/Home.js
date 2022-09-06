@@ -16,7 +16,7 @@ const Home = () => {
     dispatch(getProducts());
     dispatch(setLoader(true));
     // console.log("chalyo");
-  }, []);
+  }, [dispatch]);
   return (
     <>
       {isLoading ? (
@@ -53,6 +53,7 @@ const Home = () => {
               ) {
                 return item;
               }
+              return false;
             })
             .map((item) => {
               return <Product key={item.id} item={item} />;
