@@ -10,7 +10,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const inputChange = (e) => {
-    e.preventDefault;
+    // e.preventDefault;
     dispatch(search(e.target.value));
   };
   return (
