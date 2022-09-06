@@ -1,6 +1,6 @@
 import { put, call } from "redux-saga/effects";
 import { fetchProduct } from "../../api/axios";
-import { setProducts, search } from "./actionCreator";
+import { setProducts } from "./actionCreator";
 
 export function* fetchData() {
   try {
